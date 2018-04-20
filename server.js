@@ -11,7 +11,7 @@ app.use(bodyParser.text());
 
 app.use(express.static("public"));
 
-//App routes
+// App routes
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
